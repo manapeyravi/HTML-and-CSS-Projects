@@ -1,0 +1,55 @@
+/* Custom Typography */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  text-align: center;
+  padding: 2rem;
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Gallery Layout */
+.gallery {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.image-card {
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.image-card img {
+  display: block;
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  /* Smooth transition for transformations */
+  transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+/* --- Image Hover Effects --- */
+
+/* Effect 1: Zoom Scale & Subtle Rotation */
+.effect-scale:hover {
+  transform: scale(1.1) rotate(2deg);
+}
+
+/* Effect 2: Grayscale to Full Color & Shift Up */
+.effect-color {
+  filter: grayscale(100%);
+}
+
+.effect-color:hover {
+  filter: grayscale(0%);
+  transform: translateY(-8px);
+}
